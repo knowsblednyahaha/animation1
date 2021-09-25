@@ -1,9 +1,6 @@
 @font-face {
-    font-family: "CustomFont";
-    src: url("CustomFont.eot");
-    src: url("CustomFont.woff") format("woff"),
-    url("CustomFont.otf") format("opentype"),
-    url("CustomFont.svg#filename") format("svg");
+    font-family: "Neue Montreal";
+    src: url("./font/neue-montreal/NeueMontrealNeueMontreal-Bold.otf");
 }
 
 *{
@@ -20,10 +17,10 @@ html, body{
 }
 
 .navbar{
-    position: fixed;
+    position: relative;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .navbar-item{
@@ -44,7 +41,7 @@ html, body{
 
 .centerbar-item:nth-child(1) {
     background: #541a01;
-    font-family: "Carbon Bold" Arial, Helvetica, sans-serif;
+    font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     width: 240px;
     height: 280px;
@@ -61,7 +58,7 @@ html, body{
     position: relative;
     top: -150px;
     left: 100px;
-    font-family: "Neue Montreal" Arial, Helvetica, sans-serif;
+    font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
@@ -75,7 +72,7 @@ html, body{
 
 .bottombar-item {
     padding: 2em;
-    font-family: "Neue Montreal" Arial, Helvetica, sans-serif;
+    font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
  
@@ -90,12 +87,13 @@ html, body{
 .header {
     position: absolute;
     right: 90px;
-    bottom: -200px;
+    bottom: -250px;
     z-index: 2;
 }
 
 .header-item{
-    font-family: "Neue Montreal" Arial, Helvetica, sans-serif;
+    font-family: "Neue Montreal", Arial, Helvetica, sans-serif;
+    font-weight: 900;
     color: #000;
     font-size: 580px;
 }
@@ -110,6 +108,26 @@ html, body{
     transform: translateX(-50%);
     width: 280px;
     height: 340px;
-    background: url() no-repeat 50% 50%;
+    background: url("../img/img-two.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.img-two {
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    width: 540px;
+    height: 400px;
+    background: url("../img/img-one.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.img-three {
+    position: absolute;
+    left: 67%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 180px;
+    height: 200px;
+    background: url("../img/img-three.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
